@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* CSS Navbar */
+
+.header{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2E948A;
+  padding: 0 80px;
+  transition: 0.3s;
+}
+
+.logo a{
+  display: block;
+}
+
+.logo a img{
+  display: block;
+  width: 100%;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.menu li{
+  list-style-type: none;
+}
+
+.menu li a{
+  color: #FDFDFD;
+  text-decoration: none;
+  display: block;
+  padding: 40px 25px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  transition: 0.3s;
+}
+
+.menu li a:hover{
+  transform: scale(1.1);
+}
+
+.hamburguer{
+  position: relative;
+  width:30px;
+  height: 4px;
+  background: #FDFDFD;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.hamburguer::before, .hamburguer::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: #FDFDFD;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburguer::before{
+  top: -10px;
+  width: 20px;
+}
+
+.hamburguer::after{
+  top: 10px;
+  width: 25px;
+}
+
+.toggle-menu{
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburguer,
+.toggle-menu{
+  display: none;
+}
+
+.navigation input:checked ~ .hamburguer{
+  background: transparent;
+}
+
+.navigation input:checked ~ .hamburguer::before{
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.navigation input:checked ~ .hamburguer::after{
+  top:0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.navigation input:checked ~ .menu{
+  right: 0;
+}
+
+
+
+/* Fim CSS Navbar */
+
+.color-green{
+    color: #009688;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    padding: 2.5rem 2rem;
+}
+
+.banner__description{
+    width: 40%;
+}
+
+.banner__description h1{
+    font-weight: bold;
+    font-size: min(2.9rem,6vw);
+    line-height: 54px;
+    margin-bottom: 1.5rem;
+}
+.banner__description p{
+    font-weight: 300;
+    font-size: min(1.3rem, 4vw);
+    line-height: 23px;
+}
+.banner__illustration{
+    width: 40%;
+    max-width: 405px;
+    min-width: 160px;
+}
+
+.footer{
+    width: 100%;
+    background: #419488;
+    display: flex;
+    justify-content:space-around;
+    padding: 1.5rem 0 1.5rem 0;
+    align-items: center;
+}
+.footer__logo{
+    text-align: center;
+}
+.footer__logo img{
+    width: 80%;
+    min-width: 130px;
+    max-width: 190px;
+}
+
+.footer__nav li{
+    margin-bottom: 10px;
+    transition: 0.5s all;
+}
+
+.footer__nav li:hover{
+    transform: scale(1.1);
+}
+
+.footer__nav-link{   
+    font-size: min(1.3rem, 5.5vw);
+    line-height: 23px;
+    color: #FFFFFF; 
+    transition: 0.5s all;
+}
+
+.footer__nav-link:hover{   
+    color: #ddd4d4;
+    text-decoration: underline; 
+    font-weight: bolder;
+    
+}
+
+.footer__others-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__others-links a{
+    border: 2px solid #FFFFFF;
+    background: linear-gradient(to right, #ffffff 50%, #2E948A 50%);
+    transition: all 300ms ease-out;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    box-sizing: border-box;
+    border-radius: 62px;
+    color: #ffffff;
+    font-size: min(1.3rem, 4vw);
+    text-align: center;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem 2rem;
+    
+}
+
+.footer__others-links a:hover{
+    background-position: left bottom;
+    color: #2E948A;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    outline: none;
+}
+
+@media screen and (max-width: 992px) {
+  .hamburguer,
+  .toggle-menu{
+  display: block;
+  }
+
+  .header{
+    padding: 10px 20px;
+  }
+
+  .menu{
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    background: #2E948A;
+    width: 280px;
+    height: 100%;
+    padding-top: 65px ;
+  }
+
+  .menu li{
+    width: 100%;
+  }
+
+  .menu li a{
+    padding: 30px;
+    font-size: 24px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 900px){
+    .banner__description h1{ 
+        line-height: 40px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 800px){
+    .banner{
+        flex-direction: column;
+    }
+
+    .banner__description{
+        width: 70%;
+    }
+    .banner__description h1{
+        text-align: center;  
+    }
+
+    .banner__description p{
+        text-align: center; 
+        margin-bottom: 2rem;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer__logo img{
+        width: 40%;
+        
+        margin-bottom: 1.5rem;
+    }
+    .footer__nav{
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .footer__nav-link{   
+        font-size: min(1.3rem, 3.5vw);
+        line-height: 1.1rem;
+    } 
+}
+
+@media screen and (max-width:600px) {
+  .logo a img{
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+@media screen and (max-width:500px) {
+  .logo a img{
+    display: block;
+    width: 80%;
+    height: auto;
+  }
+
+  .banner__description{
+      width: 90%;
+  }
+  .banner__description h1{
+      margin-bottom: 1rem;
+  }
+
+  .banner__description p{
+      line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .logo a img{
+    display: block;
+    width: 70%;
+    height: auto;
+  }
+  .banner__description p{
+    font-weight: 300;
+    font-size: min(1.3rem, 4vw);
+    line-height: 17px;
+}
+}
+

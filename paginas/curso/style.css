@@ -1,0 +1,141 @@
+main{
+    width: 100%; 
+    background: #F6F6F6;
+    }
+    
+    .banner__description h1{
+      color: #FF4081;  
+    }
+   
+    .container{
+      width: 100%;
+    }
+    
+    .course-container{
+      background-color:#F6f6f6;
+      padding: 2% 10%;
+    }
+    
+    .course-info{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    iframe{
+      width:462px;
+      height:261px;
+      margin-right: 4rem;
+    }
+    
+    .course-info__text{
+      width: 40%;
+      margin: 4.5rem 0;
+    }
+    
+    .course-info__text h2 {
+      color: #FF4081;
+      font-size: min(2.1rem, 7vw);
+      margin-bottom: 2rem;
+    }
+    
+    .course-info__text p{
+      font-size: min(1.2rem, 5.5vw);
+      margin-bottom: 1rem;
+      font-weight: 300;
+      line-height: 23px;
+    }
+    
+    @media screen and (max-width: 1010px) {
+      iframe{
+        width:390px;
+        height:240px;
+        margin-right: 4rem;
+      }
+    }
+
+    @media screen and (max-width: 926px) {
+      iframe{
+        width:360px;
+        height:220px;
+        margin-right: 2rem;
+      }
+      .course-info__text{
+        width: 50%;
+      }
+      .course-info__text p{
+        line-height: 20px;
+      }
+      }
+
+      @media screen and (max-width: 862px){
+        .course-info{
+          flex-direction: column-reverse;
+        }
+        .course-info__text {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        iframe{
+         width: 500px;
+         height: 300px;
+        margin-bottom: 4rem;
+        }
+}
+
+@media screen and (max-width: 740px){
+  iframe{
+    width:450px; 
+  }
+}
+
+@media screen and (max-width: 640px){
+  iframe{
+    width:350px; 
+    height:220px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  iframe{
+    width:290px; 
+    height:190px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  iframe{
+    width:250px; 
+    height:150px;
+  }
+}
+
+@media screen and (max-width: 370px){
+  iframe{
+    width:220px; 
+    height:120px;
+  }
+  .course-info__text p{
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 338px){
+  iframe{
+    width:200px; 
+    height:120px;
+  }
+  .course-info__text p{
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  iframe{
+    width:190px; 
+    height:120px;
+  }
+  .course-info__text p{
+    line-height: 17px;
+  }
+}

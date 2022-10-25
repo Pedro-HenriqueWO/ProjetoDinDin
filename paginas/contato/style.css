@@ -1,0 +1,116 @@
+
+.container{
+    padding: 8% 10%;
+}
+
+.contact-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container-form{
+    width: 40%;
+}
+
+.container h1{
+    width: 100%;
+    margin-bottom: 2.5rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: min(3.75rem, 8vw);
+    line-height: 4.31rem;
+    color: #FF4081;
+}
+
+.field1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 8px;
+    background: #FFFFFF;
+    border: 1px solid #686868;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+.field2 {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 160px;
+    padding: 8px;
+    background: #FFFFFF;
+    border: 1px solid #686868;
+    box-sizing: border-box;
+    border-radius: 7px;
+    }
+
+.btn--contact{
+    cursor: pointer;
+    width: 7.5rem;
+    height: 2.5rem;
+    background: #FF4081;
+    border-radius: 62px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: min(1.2rem, 5vw);
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    transition: 300ms ease-in-out;
+    }
+    
+.btn--contact:hover{
+    background-color: #FDFDFD;
+    color: #FF4081;
+    border:2.5px solid #FF4081;
+    }
+
+.inside{
+    /*height: 90vh;*/
+    width: 40%;
+}
+
+.inside-responsive{
+    display: none;
+}
+
+@media screen and (max-width:907px){
+    .inside{
+        width: 40%;
+        height: 40%;
+    }
+    .contact-box{
+        align-items: center;
+    }
+    .container-form{
+        margin-right: 0%;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:695px){
+    .contact-box{
+        flex-direction: column;
+        text-align: center;
+    }
+    .container-form{
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .inside{
+        display: none;
+    }
+    .inside-responsive{
+        display: block;
+        width: 40%;
+        height: 40%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
