@@ -9,7 +9,7 @@
 ## Responsáveis por cada área do projeto
 1. Juliana Gondin e Pedro Henrique: Frontend utilizando HTML & CSS
 2. Juliane Andrade: JavaScript para automatização 
-3. Larissa Alexandre e Nayara Une: Elaboração do quadro Kanban 
+3. Larissa Alexandre e Nayara Une: Elaboração do quadro Kanban & Modelo de Entidades Relacionais (**MER)
 
 ## Sobre o projeto:
 
