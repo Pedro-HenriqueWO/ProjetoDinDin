@@ -6,6 +6,10 @@
 
 ### [Link da plataforma Desenvolvida](https://julianesas.github.io/Dindin-Plataforma-educacao-financeira/)
 
+## Responsáveis por cada área do projeto
+1. Juliana Gondin e Pedro Henrique: Frontend utilizando HTML & CSS
+2. Juliane Andrade: JavaScript para automatização 
+3. Larissa Alexandre e Nayara Une: Elaboração do quadro Kanban 
 
 ## Sobre o projeto:
 
