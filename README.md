@@ -2,7 +2,7 @@
 
 >Projeto elaborado por: 
 >
->Juliana Gondin | Juliane Andrade | Larissa Alexande | Nayara Une 
+>Juliana Gondin | Juliane Andrade | Larissa Alexande | Nayara Une | Pedro Henrique 
 
 ### [Link da plataforma Desenvolvida](https://julianesas.github.io/Dindin-Plataforma-educacao-financeira/)
 
